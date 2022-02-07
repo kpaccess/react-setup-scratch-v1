@@ -17,5 +17,7 @@ module.exports = {
     'no-console': 'off',
     'no-unused-vars': 'warn',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'arrow-body-style': ['error', 'never'],
+    semi: ['error', 'never'],
   },
 };
