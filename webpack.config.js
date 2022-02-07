@@ -2,18 +2,20 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: path.join(__dirname, "src", "index.js"),
+  entry: "./src/index.js",
   output: {
-    path: path.join(__dirname, "build"),
-    filename: "index.bundle.js",
+    path: path.resolve(__dirname, "build"),
+    publicPath: "/",
   },
   mode: process.env.NODE_ENV || "development",
+  target: "web",
+  // devTool: "cheap-module-source-map",
   devServer: {
     static: {
       directory: path.join(__dirname, "src"),
     },
     compress: true,
-    port: 8000,
+    // port: 8000,
   },
   module: {
     rules: [
