@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const HelloWorld = () => {
+function HelloWorld() {
   return <h1>Hello World 2231</h1>;
-};
+}
 
-ReactDOM.render(<HelloWorld />, document.getElementById("root"));
+ReactDOM.render(<HelloWorld />, document.getElementById('root'));
